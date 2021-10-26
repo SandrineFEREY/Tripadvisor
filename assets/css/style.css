@@ -1,0 +1,9 @@
+header {
+  font-size: 80;
+  background-color: greenyellow;
+}
+
+header img {
+  height: 50px;
+  /* width: 100px; */
+}
