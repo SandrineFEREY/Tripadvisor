@@ -1,14 +1,99 @@
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+
 header {
   font-size: 80;
-  background-color: greenyellow;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 header img {
-  height: 50px;
+  height: 30px;
 }
 
-nav {
+header nav {
+  display: flex;
+  align-items: center;
+}
+header nav div {
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+}
+
+header nav div i {
+  font-size: 10px;
+}
+
+header button {
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+  padding: 10px 30px;
+  border: none;
+}
+
+main {
+  padding-top: 50px;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+h1 span {
+  color: red;
+}
+
+.menu {
+  margin: 40px 0;
+  display: flex;
+}
+
+.menu div {
+  border: solid 2px black;
+  flex: 1;
+  padding: 30px;
+  display: flex;
   justify-content: space-between;
+  border-radius: 20px;
+}
+.menu div:not(:last-child) {
+  margin-right: 20px;
+}
+
+.menu div:hover {
+  background-color: black;
+  color: white;
+}
+
+.pictures {
+  height: 430px;
+  margin-bottom: 100px;
+  display: flex;
+}
+
+.pictures .col-1 {
+  flex: 1;
+  height: 100%;
+  margin-right: 2px;
+}
+.pictures .col-2 {
+  height: 100%;
+  width: 480px;
+}
+
+.pictures .col-1 img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.pictures .col-2 img {
+  height: calc(50% - 1.5px);
+  width: 100%;
+  object-fit: cover;
 }
