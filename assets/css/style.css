@@ -40,7 +40,8 @@ main {
   padding-top: 50px;
 }
 
-h1 {
+h1,
+h2 {
   font-size: 30px;
 }
 
@@ -56,11 +57,17 @@ h1 span {
 .menu div {
   border: solid 2px black;
   flex: 1;
-  padding: 30px;
+  padding: 10px 10px 0 10px;
   display: flex;
   justify-content: space-between;
   border-radius: 20px;
+  height: 60px;
 }
+
+div i {
+  margin-right: 10px;
+}
+
 .menu div:not(:last-child) {
   margin-right: 20px;
 }
@@ -68,6 +75,7 @@ h1 span {
 .menu div:hover {
   background-color: black;
   color: white;
+  cursor: pointer;
 }
 
 .pictures {
@@ -79,7 +87,7 @@ h1 span {
 .pictures .col-1 {
   flex: 1;
   height: 100%;
-  margin-right: 2px;
+  margin-right: 3px;
 }
 .pictures .col-2 {
   height: 100%;
@@ -96,4 +104,79 @@ h1 span {
   height: calc(50% - 1.5px);
   width: 100%;
   object-fit: cover;
+}
+
+.block1 {
+  height: 300px;
+  display: flex;
+}
+
+h2 {
+  padding-bottom: 20px;
+}
+
+.colonne1 {
+  height: 100%;
+  width: 25%;
+  background-color: violet;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+
+.colonne1 h3 {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.colonne1 p {
+  margin-bottom: 30px;
+}
+
+.colonne2 {
+  width: 75%;
+  background-color: thistle;
+  border: solid black 3px;
+  display: flex;
+  overflow: hidden;
+  overflow: scroll;
+}
+
+.colonne2 .col-carroussel {
+  height: 70%;
+  width: 30%;
+  margin-right: 20px;
+  border: black solid 2px;
+  flex-shrink: 0;
+}
+
+.colonne2 .col-carroussel:not(:last child) {
+  margin-right: 20px;
+}
+
+.col-carroussel img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.circle {
+  background-color: red;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  position: absolute;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.col-carroussel h4 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.col-carroussel p {
+  font-size: 15px;
 }
