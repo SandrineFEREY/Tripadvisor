@@ -198,6 +198,22 @@ h2 {
   header span {
     display: none;
   }
+  .menu {
+    flex-wrap: wrap;
+  }
+  .menu div {
+    /* box-sizing: border-box; */
+    flex: inherit;
+    padding: 10px 10px 0 10px;
+    height: 30px;
+    width: calc((100% / 4) - (60px / 4));
+  }
+  .menu div:not(:last-child) {
+    margin-right: 0px;
+  }
+  .menu div:not(:nth-child(4n)) {
+    margin-right: 20px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -207,5 +223,13 @@ h2 {
 
   .hidden {
     display: inherit;
+  }
+
+  header button {
+    display: none;
+  }
+  header {
+    display: flex;
+    justify-content: space-around;
   }
 }
